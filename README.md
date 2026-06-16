@@ -71,7 +71,7 @@ The dataset (`Dataset_Modelling.xlsx`) contains 205 experimental datapoints comp
 
 **Step 1 — Clone the repository:**
 ```bash
-git clone https://github.com/RoshniSK9/map-hydrogen-yield-ml.git
+git clone https://github.com/RoshniSK9/MAP-Hydrogen-Yield-ML.git
 cd map-hydrogen-yield-ml
 ```
 
