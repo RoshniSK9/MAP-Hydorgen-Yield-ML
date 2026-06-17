@@ -190,8 +190,7 @@ Running the pipeline produces a timestamped output directory containing:
 ---
 
 ## Reproducibility
-
-The train-test split uses a fixed random seed of 30. All hyperparameter searches use reproducible random states. To exactly reproduce the results reported in the paper, ensure the package versions listed in `requirements.txt` are installed.
+The train-test split uses a fixed random seed of 30. All hyperparameter searches use reproducible random states. This code was developed and tested on macOS 15 (Apple M5, MacBook Air) using Python 3.12.11. The package versions listed in `requirements.txt` and `environment.yml` are compatible with Apple Silicon. Users on Windows or Linux should use `requirements.txt` with Option B to install dependencies, as `environment.yml` was exported from macOS and may not be compatible with other operating systems. To exactly reproduce the results reported in the paper, ensure the package versions listed in `requirements.txt` are installed.
 
 ---
 
