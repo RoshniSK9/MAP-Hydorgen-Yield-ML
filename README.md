@@ -65,8 +65,34 @@ The dataset (`Dataset_Modelling.xlsx`) contains 205 experimental datapoints comp
 
 ---
 
-## Installation
+## Getting Started
 
+If you are new to Python and conda, follow these steps before proceeding to the Installation section.
+
+**1. Install conda:**
+Download and install Miniconda from [https://docs.conda.io/en/latest/miniconda.html](https://docs.conda.io/en/latest/miniconda.html). Miniconda is a lightweight installer for conda, a package and environment manager for Python.
+
+**2. Install Git:**
+Download and install Git from [https://git-scm.com/downloads](https://git-scm.com/downloads). Git is used to download the repository to your computer.
+
+**3. Open a terminal:**
+- On **macOS**: press Command + Space, type Terminal, and press Enter
+- On **Windows**: search for Anaconda Prompt in the Start menu and open it
+- On **Linux**: open your system terminal
+
+**4. Verify your installation:**
+Run the following commands to confirm conda and Git are installed correctly:
+```bash
+conda --version
+git --version
+```
+You should see version numbers printed for both. If not, revisit steps 1 and 2.
+
+Once conda and Git are installed and working, proceed to the Installation section below.
+
+---
+
+## Installation
 **Requirements:** Python 3.12.11
 
 **Step 1 — Clone the repository:**
@@ -77,18 +103,25 @@ cd MAP-Hydrogen-Yield-ML
 
 **Step 2 — Set up the environment:**
 
-Option A — Recreate the exact conda environment used in this study (recommended for full reproducibility):
+Option A — Recommended for macOS (Apple Silicon) users. Recreates the exact conda environment used in this study including Jupyter:
 ```bash
 conda env create -f environment.yml
 conda activate h2_pred
 ```
 
-Option B — Create a new conda environment and install the required packages only:
+Option B — Recommended for Windows and Linux users, or macOS users who prefer a minimal install. Installs only the essential packages:
 ```bash
 conda create -n h2_pred python=3.12.11
 conda activate h2_pred
 pip install -r requirements.txt
+pip install jupyterlab
 ```
+
+**Step 3 — Launch Jupyter and open the notebook:**
+```bash
+jupyter lab
+```
+Open `notebook.ipynb` and run all cells to reproduce the results.
 
 ---
 
